@@ -521,16 +521,12 @@
     .line 385
     new-instance v0, Landroid/hardware/GeomagneticField;
 
-    invoke-virtual {v6}, Landroid/location/Location;->getLatitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
 
     double-to-float v1, v2
 
     .line 386
-    invoke-virtual {v6}, Landroid/location/Location;->getLongitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
 
     double-to-float v2, v2
 

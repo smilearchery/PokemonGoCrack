@@ -139,18 +139,14 @@
     .restart local v1    # "location":Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;
     iget-object v2, p0, Lcom/upsight/android/analytics/internal/provider/LocationTracker$1;->val$newLocation:Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;
 
-    invoke-virtual {v2}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->getLatitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
 
     invoke-virtual {v1, v2, v3}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->setLatitude(D)V
 
     .line 48
     iget-object v2, p0, Lcom/upsight/android/analytics/internal/provider/LocationTracker$1;->val$newLocation:Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;
 
-    invoke-virtual {v2}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->getLongitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
 
     invoke-virtual {v1, v2, v3}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->setLongitude(D)V
 

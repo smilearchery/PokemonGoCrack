@@ -738,17 +738,13 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
 
     aput-wide v2, v0, v1
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
-
-    move-result-wide v2
+    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
 
     aput-wide v2, v0, v1
 
