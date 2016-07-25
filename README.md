@@ -10,10 +10,11 @@ Decompile base on the version 0.29.3
 # [Download](https://github.com/smilearchery/PokemonGoCrack/releases)
 
 # Tips
-1. **Only** support **[Pokemon Trainer Club](https://sso.pokemon.com/sso/login)** login for now.
-2. Will save location first time open as your base location.You will locate in [Union Square](https://goo.gl/maps/Um3GHDEchNT2) first time open.
-3. Please be aware that you are using this at your own risk.
-4. Enjoy yourself.
+1. **ONLY** support **[Pokemon Trainer Club](https://sso.pokemon.com/sso/login)** login for now.
+2. **You need to uninstall the PokemonGo before you install my version.**
+3. Will save location first time open as your base location.You will locate in [Union Square](https://goo.gl/maps/Um3GHDEchNT2) first time open.
+4. Please be aware that you are using this at your own risk.
+5. Enjoy yourself.
 
 # Build Your Own Version
 1.repackage the apk
