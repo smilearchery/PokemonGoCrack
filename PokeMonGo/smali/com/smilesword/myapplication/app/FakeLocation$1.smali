@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 68
+    .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
 
     const-wide/16 v2, 0x0
 
-    .line 84
+    .line 145
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->sharedPreferences:Landroid/content/SharedPreferences;
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$000()Landroid/content/SharedPreferences;
 
@@ -54,13 +54,13 @@
 
     if-nez v0, :cond_0
 
-    .line 85
+    .line 146
     const/4 v0, 0x1
 
     # setter for: Lcom/smilesword/myapplication/app/FakeLocation;->isInited:Z
     invoke-static {v0}, Lcom/smilesword/myapplication/app/FakeLocation;->access$102(Z)Z
 
-    .line 86
+    .line 147
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->sharedPreferences:Landroid/content/SharedPreferences;
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$000()Landroid/content/SharedPreferences;
 
@@ -77,7 +77,7 @@
     # setter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_la:D
     invoke-static {v0, v1}, Lcom/smilesword/myapplication/app/FakeLocation;->access$202(D)D
 
-    .line 87
+    .line 148
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->sharedPreferences:Landroid/content/SharedPreferences;
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$000()Landroid/content/SharedPreferences;
 
@@ -94,7 +94,7 @@
     # setter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_lo:D
     invoke-static {v0, v1}, Lcom/smilesword/myapplication/app/FakeLocation;->access$302(D)D
 
-    .line 88
+    .line 149
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_la:D
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$200()D
 
@@ -113,7 +113,7 @@
 
     if-nez v0, :cond_0
 
-    .line 89
+    .line 150
     invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v0
@@ -121,7 +121,7 @@
     # setter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_la:D
     invoke-static {v0, v1}, Lcom/smilesword/myapplication/app/FakeLocation;->access$202(D)D
 
-    .line 90
+    .line 151
     invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v0
@@ -129,7 +129,7 @@
     # setter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_lo:D
     invoke-static {v0, v1}, Lcom/smilesword/myapplication/app/FakeLocation;->access$302(D)D
 
-    .line 91
+    .line 152
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->sharedPreferences:Landroid/content/SharedPreferences;
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$000()Landroid/content/SharedPreferences;
 
@@ -141,7 +141,7 @@
 
     const-string v1, "init_la"
 
-    .line 92
+    .line 153
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_la:D
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$200()D
 
@@ -155,7 +155,7 @@
 
     const-string v1, "init_lo"
 
-    .line 93
+    .line 154
     # getter for: Lcom/smilesword/myapplication/app/FakeLocation;->bj_lo:D
     invoke-static {}, Lcom/smilesword/myapplication/app/FakeLocation;->access$300()D
 
@@ -167,10 +167,10 @@
 
     move-result-object v0
 
-    .line 94
+    .line 155
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 97
+    .line 158
     :cond_0
     const-wide v0, 0x4042e4dc6e2a8006L    # 37.787977
 
@@ -189,7 +189,7 @@
 
     sput-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
 
-    .line 98
+    .line 159
     const-wide v0, -0x3fa165ec0724b76fL    # -122.407469
 
     invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
@@ -207,7 +207,7 @@
 
     sput-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
 
-    .line 99
+    .line 160
     const-string v0, "GPS"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -248,7 +248,7 @@
 
     move-result-object v1
 
-    .line 100
+    .line 161
     invoke-virtual {p1}, Landroid/location/Location;->getProvider()Ljava/lang/String;
 
     move-result-object v2
@@ -261,10 +261,10 @@
 
     move-result-object v1
 
-    .line 99
+    .line 160
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 101
+    .line 162
     return-void
 .end method
 
@@ -273,7 +273,7 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 80
+    .line 141
     return-void
 .end method
 
@@ -282,7 +282,7 @@
     .param p1, "provider"    # Ljava/lang/String;
 
     .prologue
-    .line 76
+    .line 137
     return-void
 .end method
 
@@ -293,6 +293,6 @@
     .param p3, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 72
+    .line 133
     return-void
 .end method

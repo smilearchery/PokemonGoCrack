@@ -536,6 +536,8 @@
 
     move-result v0
 
+    const/4 v0, 0x3
+
     aput v0, v1, v2
 
     const/4 v2, 0x1
@@ -555,6 +557,8 @@
 
     move-result v0
 
+    const/4 v0, 0x3
+
     aput v0, v1, v2
 
     const/4 v2, 0x2
@@ -573,6 +577,8 @@
     invoke-virtual {v0}, Lcom/nianticlabs/nia/contextservice/ServiceStatus;->ordinal()I
 
     move-result v0
+
+    const/4 v0, 0x3
 
     aput v0, v1, v2
 
