@@ -6,6 +6,9 @@ Android Version crack of PokemonGo,to enable it in some country.
 
 It will move your location to [Union Square](https://goo.gl/maps/Um3GHDEchNT2), and move when you move.Base on your real GPS location.
 
+**Any kind of Business use is not Allowed.**
+**If Niantic(or official) contacts me and requests that I discontinue development, I will comply.**
+
 Decompile base on the version 0.29.3
 
 
