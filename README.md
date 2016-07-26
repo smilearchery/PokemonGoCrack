@@ -1,4 +1,4 @@
-# [Download](https://github.com/smilearchery/PokemonGoCrack/releases)
+# [Download Click Here](https://github.com/smilearchery/PokemonGoCrack/releases)
 # PokemonGoCrack
 Android Version crack of PokemonGo,to enable it in some country.
 
