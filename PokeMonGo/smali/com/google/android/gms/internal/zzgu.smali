@@ -1680,7 +1680,9 @@
 
     move-result-object v2
 
-    sget-wide v4, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v4
 
     mul-double/2addr v4, v6
 
@@ -1690,7 +1692,9 @@
 
     move-result-object v3
 
-    sget-wide v4, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
+
+    move-result-wide v4
 
     mul-double/2addr v4, v6
 

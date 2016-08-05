@@ -36,5 +36,5 @@ usesFramework:
   tag: null
 version: 2.2.0-475178-SNAPSHOT
 versionInfo:
-  versionCode: '2016071800'
-  versionName: 0.29.3
+  versionCode: '2016073000'
+  versionName: 0.31.0

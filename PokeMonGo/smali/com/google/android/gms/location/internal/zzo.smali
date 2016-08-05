@@ -69,13 +69,17 @@
 
     const/4 v1, 0x4
 
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    invoke-virtual {p0}, Lcom/google/android/gms/location/internal/ParcelableGeofence;->getLatitude()D
+
+    move-result-wide v2
 
     invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ID)V
 
     const/4 v1, 0x5
 
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    invoke-virtual {p0}, Lcom/google/android/gms/location/internal/ParcelableGeofence;->getLongitude()D
+
+    move-result-wide v2
 
     invoke-static {p1, v1, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/zzb;->zza(Landroid/os/Parcel;ID)V
 

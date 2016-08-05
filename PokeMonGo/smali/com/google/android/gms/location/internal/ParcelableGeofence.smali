@@ -487,7 +487,7 @@
 .method public getLatitude()D
     .registers 3
 
-    sget-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    iget-wide v0, p0, Lcom/google/android/gms/location/internal/ParcelableGeofence;->zzaEl:D
 
     return-wide v0
 .end method
@@ -495,7 +495,7 @@
 .method public getLongitude()D
     .registers 3
 
-    sget-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    iget-wide v0, p0, Lcom/google/android/gms/location/internal/ParcelableGeofence;->zzaEm:D
 
     return-wide v0
 .end method

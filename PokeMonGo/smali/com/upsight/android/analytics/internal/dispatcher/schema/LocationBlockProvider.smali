@@ -218,7 +218,9 @@
 
     .line 72
     :pswitch_3e
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    invoke-virtual {v0}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->getLatitude()D
+
+    move-result-wide v2
 
     const/4 v1, 0x0
 
@@ -230,7 +232,9 @@
 
     .line 74
     :pswitch_48
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    invoke-virtual {v0}, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->getLongitude()D
+
+    move-result-wide v2
 
     const/4 v1, 0x0
 

@@ -86,13 +86,17 @@
 
     iget-object v1, p0, Lcom/unity3d/player/r;->c:Landroid/location/Location;
 
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    invoke-virtual {v1}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v2
 
     double-to-float v1, v2
 
     iget-object v2, p0, Lcom/unity3d/player/r;->c:Landroid/location/Location;
 
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    invoke-virtual {v2}, Landroid/location/Location;->getLongitude()D
+
+    move-result-wide v2
 
     double-to-float v2, v2
 
@@ -114,11 +118,15 @@
 
     iget-object v1, p0, Lcom/unity3d/player/r;->b:Lcom/unity3d/player/UnityPlayer;
 
-    sget-wide v2, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
+    invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v2
 
     double-to-float v2, v2
 
-    sget-wide v4, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
+    invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
+
+    move-result-wide v4
 
     double-to-float v3, v4
 

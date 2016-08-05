@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <application android:banner="@drawable/app_banner" android:debuggable="true" android:icon="@drawable/app_icon" android:isGame="false" android:label="@string/app_name" android:theme="@style/UnityThemeSelector">
+    <application android:banner="@drawable/app_banner" android:debuggable="false" android:icon="@drawable/app_icon" android:isGame="false" android:label="@string/app_name" android:theme="@style/UnityThemeSelector">
         <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerNativeActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -29,9 +29,18 @@
         <activity android:name="com.nianticlabs.nia.account.AccountsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
         <activity android:exported="false" android:name="com.nianticlabs.nia.iap.PurchaseActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
         <service android:exported="false" android:name="com.nianticlabs.nia.useractivity.ActivityRecognitionService"/>
+        <service android:exported="false" android:name="com.nianticlabs.pokemongoplus.service.BackgroundService" android:process=":pgp">
+            <intent-filter>
+                <action android:name="com.nianticlabs.pokemongoplus.service.ToServer"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.nianticlabs.pokemongoplus.service.ClientService">
+            <intent-filter>
+                <action android:name="com.nianticlabs.pokemongoplus.service.ToClient"/>
+            </intent-filter>
+        </service>
         <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
         <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
-        <service android:enabled="true" android:name="com.nianticproject.holoholo.sfida.service.SfidaService"/>
         <meta-data android:name="com.upsight.session_callbacks" android:value="com.upsight.android.unity.UnitySessionCallbacks"/>
         <receiver android:name="com.upsight.android.googlepushservices.internal.PushBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
@@ -65,11 +74,9 @@
     <uses-feature android:name="android.hardware.touchscreen"/>
     <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
     <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
     <permission android:name="com.nianticlabs.pokemongo.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
     <uses-permission android:name="com.nianticlabs.pokemongo.permission.C2D_MESSAGE"/>
-    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
-    <uses-feature android:name="android.hardware.location" android:required="false"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
