@@ -69,6 +69,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/nianticlabs/nia/contextservice/ContextService;-><init>(Landroid/content/Context;J)V
 
     .line 45
+    invoke-static {p1}, Lcom/smilesword/myapplication/app/FakeLocation;->startLocationService(Landroid/content/Context;)V
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -181,6 +182,8 @@
 
     .prologue
     .line 20
+    invoke-static {p1}, Lcom/smilesword/myapplication/app/FakeLocation;->changeToFakeLocation(Landroid/location/Location;)V
+
     invoke-direct {p0, p1, p2}, Lcom/nianticlabs/nia/location/NianticLocationManager;->locationUpdate(Landroid/location/Location;[I)V
 
     return-void
@@ -393,6 +396,8 @@
 
     move-result-object v2
 
+    invoke-static {v1}, Lcom/smilesword/myapplication/app/FakeLocation;->changeToFakeLocation(Landroid/location/Location;)V
+
     invoke-direct {p0, v1, v2}, Lcom/nianticlabs/nia/location/NianticLocationManager;->locationUpdate(Landroid/location/Location;[I)V
 
     .line 142
@@ -531,6 +536,8 @@
 
     move-result v0
 
+    const/4 v0, 0x3
+
     aput v0, v1, v2
 
     const/4 v2, 0x1
@@ -550,6 +557,8 @@
 
     move-result v0
 
+    const/4 v0, 0x3
+
     aput v0, v1, v2
 
     const/4 v2, 0x2
@@ -568,6 +577,8 @@
     invoke-virtual {v0}, Lcom/nianticlabs/nia/contextservice/ServiceStatus;->ordinal()I
 
     move-result v0
+
+    const/4 v0, 0x3
 
     aput v0, v1, v2
 

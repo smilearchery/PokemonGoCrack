@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     .prologue
-    .line 64
+    .line 62
     iput-object p1, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .registers 3
 
     .prologue
-    .line 71
+    .line 69
     iget-object v0, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     sget-object v1, Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;->STARTED:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
@@ -49,7 +49,7 @@
     # setter for: Lcom/nianticlabs/nia/location/FusedLocationProvider;->googleApiState:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
     invoke-static {v0, v1}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$002(Lcom/nianticlabs/nia/location/FusedLocationProvider;Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;)Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
 
-    .line 73
+    .line 71
     iget-object v0, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     sget-object v1, Lcom/nianticlabs/nia/contextservice/ServiceStatus;->INITIALIZED:Lcom/nianticlabs/nia/contextservice/ServiceStatus;
@@ -57,7 +57,7 @@
     # invokes: Lcom/nianticlabs/nia/location/FusedLocationProvider;->updateStatus(Lcom/nianticlabs/nia/contextservice/ServiceStatus;)V
     invoke-static {v0, v1}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$100(Lcom/nianticlabs/nia/location/FusedLocationProvider;Lcom/nianticlabs/nia/contextservice/ServiceStatus;)V
 
-    .line 75
+    .line 73
     iget-object v0, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     # getter for: Lcom/nianticlabs/nia/location/FusedLocationProvider;->appState:Lcom/nianticlabs/nia/location/FusedLocationProvider$AppState;
@@ -69,13 +69,13 @@
 
     if-ne v0, v1, :cond_1d
 
-    .line 76
+    .line 74
     iget-object v0, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     # invokes: Lcom/nianticlabs/nia/location/FusedLocationProvider;->startProvider()V
     invoke-static {v0}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$300(Lcom/nianticlabs/nia/location/FusedLocationProvider;)V
 
-    .line 78
+    .line 76
     :cond_1d
     return-void
 .end method
@@ -85,7 +85,7 @@
     .param p1, "connectionResult"    # Lcom/google/android/gms/common/ConnectionResult;
 
     .prologue
-    .line 95
+    .line 93
     iget-object v1, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     sget-object v2, Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;->STOPPED:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
@@ -93,19 +93,19 @@
     # setter for: Lcom/nianticlabs/nia/location/FusedLocationProvider;->googleApiState:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
     invoke-static {v1, v2}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$002(Lcom/nianticlabs/nia/location/FusedLocationProvider;Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;)Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
 
-    .line 97
+    .line 95
     if-eqz p1, :cond_20
 
-    .line 98
+    .line 96
     invoke-virtual {p1}, Lcom/google/android/gms/common/ConnectionResult;->getErrorCode()I
 
     move-result v0
 
-    .line 99
+    .line 97
     .local v0, "code":I
     packed-switch v0, :pswitch_data_28
 
-    .line 104
+    .line 102
     iget-object v1, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     sget-object v2, Lcom/nianticlabs/nia/contextservice/ServiceStatus;->FAILED:Lcom/nianticlabs/nia/contextservice/ServiceStatus;
@@ -113,12 +113,12 @@
     # invokes: Lcom/nianticlabs/nia/location/FusedLocationProvider;->updateStatus(Lcom/nianticlabs/nia/contextservice/ServiceStatus;)V
     invoke-static {v1, v2}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$100(Lcom/nianticlabs/nia/location/FusedLocationProvider;Lcom/nianticlabs/nia/contextservice/ServiceStatus;)V
 
-    .line 109
+    .line 107
     .end local v0    # "code":I
     :goto_17
     return-void
 
-    .line 101
+    .line 99
     .restart local v0    # "code":I
     :pswitch_18
     iget-object v1, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
@@ -130,7 +130,7 @@
 
     goto :goto_17
 
-    .line 107
+    .line 105
     .end local v0    # "code":I
     :cond_20
     iget-object v1, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
@@ -142,7 +142,7 @@
 
     goto :goto_17
 
-    .line 99
+    .line 97
     :pswitch_data_28
     .packed-switch 0x13
         :pswitch_18
@@ -153,7 +153,7 @@
     .registers 3
 
     .prologue
-    .line 86
+    .line 84
     iget-object v0, p0, Lcom/nianticlabs/nia/location/FusedLocationProvider$1;->this$0:Lcom/nianticlabs/nia/location/FusedLocationProvider;
 
     sget-object v1, Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;->STOPPED:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
@@ -161,6 +161,6 @@
     # setter for: Lcom/nianticlabs/nia/location/FusedLocationProvider;->googleApiState:Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
     invoke-static {v0, v1}, Lcom/nianticlabs/nia/location/FusedLocationProvider;->access$002(Lcom/nianticlabs/nia/location/FusedLocationProvider;Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;)Lcom/nianticlabs/nia/location/FusedLocationProvider$GoogleApiState;
 
-    .line 87
+    .line 85
     return-void
 .end method

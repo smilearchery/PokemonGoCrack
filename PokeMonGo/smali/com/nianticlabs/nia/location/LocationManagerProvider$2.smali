@@ -127,6 +127,9 @@
 
     .line 156
     .local v0, "status":Landroid/location/GpsStatus;
+
+    invoke-static {v0}, Lcom/smilesword/myapplication/app/FakeLocation;->changeFakeGpsStatus(Landroid/location/GpsStatus;)V
+
     iget-object v1, p0, Lcom/nianticlabs/nia/location/LocationManagerProvider$2;->this$0:Lcom/nianticlabs/nia/location/LocationManagerProvider;
 
     invoke-virtual {v0}, Landroid/location/GpsStatus;->getTimeToFirstFix()I

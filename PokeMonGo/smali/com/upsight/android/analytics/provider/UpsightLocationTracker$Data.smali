@@ -197,7 +197,7 @@
 
     .prologue
     .line 116
-    iget-wide v0, p0, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->latitude:D
+    sget-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLa:D
 
     return-wide v0
 .end method
@@ -207,7 +207,7 @@
 
     .prologue
     .line 125
-    iget-wide v0, p0, Lcom/upsight/android/analytics/provider/UpsightLocationTracker$Data;->longitude:D
+    sget-wide v0, Lcom/smilesword/myapplication/app/FakeLocation;->dLo:D
 
     return-wide v0
 .end method
