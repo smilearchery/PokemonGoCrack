@@ -10,7 +10,7 @@ It will move your location to [Union Square](https://goo.gl/maps/Um3GHDEchNT2), 
 
 **If Niantic(or official) contacts me and requests that I discontinue development, I will comply.**
 
-Decompile base on the version 0.29.3
+Decompile base on the version 0.31.0
 
 
 # Tips
